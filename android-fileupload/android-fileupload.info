@@ -1,0 +1,7 @@
+name = Android File Upload
+description = WebService APIs for AndroidFileUpload.
+core = 7.x
+package = services
+project = bot_marketing
+dependencies[] = services
+dependencies[] = rest_server

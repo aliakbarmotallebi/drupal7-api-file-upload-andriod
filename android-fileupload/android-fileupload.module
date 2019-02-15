@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_services_resources().
+ * Create service resource for APIs to return the necessary json data.
+ */
+function android_fileupload_services_services_resources() {
+  $resources = array();
+
+  module_load_include('inc', 'android-fileupload', 'android-fileupload');
+
+  $resources += android_fileupload_services_resource();
+
+  return $resources;
+}
